@@ -79,16 +79,19 @@ function setup() {
 
 //final text
   msg = createP('<b> *bip bop* real time rendering baby, now just save the image</b>');
-  msg.position(20, 1810);
+  msg.position(20, 1710);
 
 //credits - dear hax0r, if you contributed paste your alias here
-  msg = createP('By baby commando with love <3');
+  msg = createP('By @BabyCommando_ with love <3');
   msg.position(20, 1910);
+
+  msg = createP('Please help me get jiu jitsu classes for my grandmother -> donate to tz1KseWbS7f7YQhGsGP8QmXDJyzrKV71xxyj (I accept arts :] )');
+  msg.position(20, 1930);
 
 //just a dot to make the page longer -
 //or maybe a future easter egg hehe
   msg = createP('.');
-  msg.position(20, 2040);
+  msg.position(20, 1970);
 
 }
 
