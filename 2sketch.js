@@ -33,7 +33,7 @@ function setup() {
   let c = createCanvas(1300, 800);
 
 //input Artowk Name
-  msg = createP('Insert <b>Artwork Name</b> (break like = enter key)');
+  msg = createP('Insert <b>Artwork Name</b> (to break line press enter key)');
   msg.position(20, 1130);
 
   input2 = createElement('textarea', 'Artwork Name');
@@ -47,7 +47,7 @@ function setup() {
   input3.position(20, 1280);
 
   //input Description
-  msg = createP('Insert the <b>Description</b> (break like = enter key)');
+  msg = createP('Insert the <b>Description</b> (to break like press enter key)');
   msg.position(20, 1330);
 
   input6 = createElement('textarea', 'Lorem ipsum dolor sit amet, \nconsectetur adipiscing elit. \nPhasellus massa arcu, convallis \neu tristique a, euismod a purus. \nIn hac habitasse platea dictumst. \nUt sed ...');
