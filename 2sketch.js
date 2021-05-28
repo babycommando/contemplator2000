@@ -6,6 +6,7 @@ let input3;
 let input4;
 let input5;
 let input6;
+let input7;
 let typeTexts;
 let aliendatacenter;
 // let qr;
@@ -41,10 +42,10 @@ function setup() {
 
 //input Artist Name
   msg = createP('Insert <b>Artist Name</b>');
-  msg.position(20, 1240);
+  msg.position(20, 1250);
 
   input3 = createInput('Artist');
-  input3.position(20, 1280);
+  input3.position(20, 1290);
 
   //input Description
   msg = createP('Insert the <b>Description</b> (to break like press enter key)');
@@ -62,24 +63,32 @@ function setup() {
 
 //input Editions Number
   msg = createP('How many <b>editions?</b> eg. 10/10');
-  msg.position(20, 1540);
+  msg.position(20, 1550);
 
   input5 = createInput('10/10');
-  input5.position(20, 1580);
+  input5.position(20, 1590);
+
+//input link
+
+  msg = createP('Insert a <b>link</b> if you want');
+  msg.position(20, 1640);
+
+  input7 = createInput('collect this NFT now on hicetnunc.xyz/');
+  input7.position(20, 1680);
 
 
 //final text
   msg = createP('<b> *bip bop* real time rendering baby, now just save the image</b>');
-  msg.position(20, 1610);
+  msg.position(20, 1810);
 
 //credits - dear hax0r, if you contributed paste your alias here
   msg = createP('By baby commando with love <3');
-  msg.position(20, 1810);
+  msg.position(20, 1910);
 
 //just a dot to make the page longer -
 //or maybe a future easter egg hehe
   msg = createP('.');
-  msg.position(20, 1840);
+  msg.position(20, 2040);
 
 }
 
@@ -130,7 +139,7 @@ function draw() {
 
   //DESCRIPTION Counter Input
   textSize(14);
-  text("collect this NFT now on hicetnunc.xyz/", 60, 723);
+  text(input7.value(), 60, 723);
   textStyle(BOLD);
 
 
