@@ -7,6 +7,7 @@ let input4;
 let input5;
 let input6;
 let typeTexts;
+let aliendatacenter;
 // let qr;
 
 // load images
@@ -14,6 +15,7 @@ function preload()
 {
   hen = loadImage("og-image.jpg");
   cnew = loadFont('courier-new.ttf');
+  aliendatacenter = loadImage("aliendatacenter.png")
   //future qrcode generator implementation
   //      uncomment all to see how it goes
   // qr = loadImage("qr.png")
@@ -65,10 +67,6 @@ function setup() {
   input5 = createInput('10/10');
   input5.position(20, 1580);
 
-  //future qrcode generator implementation
-  // qr.loadPixels();
-  // get color of middle pixel
-  // c = hen.get(hen.width / 2, hen.height / 2);
 
 //final text
   msg = createP('<b> *bip bop* real time rendering baby, now just save the image</b>');
@@ -90,12 +88,17 @@ function setup() {
 
 function draw() {
   background(255);
+  //default image
+  image(aliendatacenter, 500, 0, 800, 800);
+  //inserted image
   if (img) {
   image(img, 500, 0, 800, 800);
   }
 
+
+
   //future qrcode generator implementation
-  //  image(qr, 70, 594, 130, 130);
+  //  image(qr, 70, 594, 130, 130);aliendatacenter
 
   //draw hen logo
   image(hen, 12, 40, 300, 170);
