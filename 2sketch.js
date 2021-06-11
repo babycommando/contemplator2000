@@ -180,7 +180,25 @@ function download_image(){
   var canvas = document.getElementById("mycanvas");
   image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
   var link = document.createElement('a');
-  link.download = "my-image.png";
+  var namez = [
+    "Thanks for using CONTEMPLATOR2000",
+    "This worth more than Monalisa",
+    "OMG this art is awesome",
+    "Delicious art"
+    "Damn, this art is sickkkk"
+    "Time to make some tezos, baby"
+    "*Bip Bop* your art is ready!"
+    "You're gonna be famous because of this one"
+    "Wow, so many emotions on this piece"
+    "CONTEMPLATED!"
+    "I LOVED IT!!"
+    "I know i'm just a robot, but i can understand the levels of emotion you put on this one"
+    "Sell this one for 100tz yeahhh"
+    "I'm in love with your art skills"
+  ];
+  var randNamez = namez[Math.floor(Math.random() * namez.length)];
+
+  link.download = randNamez + ".png";
   link.href = image;
   link.click();
 }
