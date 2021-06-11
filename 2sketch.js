@@ -184,18 +184,17 @@ function download_image(){
     "Thanks for using CONTEMPLATOR2000",
     "This worth more than Monalisa",
     "OMG this art is awesome",
-    "Delicious art"
-    "Damn, this art is sickkkk"
-    "Time to make some tezos, baby"
-    "*Bip Bop* your art is ready!"
-    "You're gonna be famous because of this one"
-    "Wow, so many emotions on this piece"
-    "CONTEMPLATED!"
-    "I LOVED IT!!"
-    "I know i'm just a robot, but i can understand the levels of emotion you put on this one"
-    "Sell this one for 100tz yeahhh"
-    "I'm in love with your art skills"
-  ];
+    "Delicious art",
+    "Damn, this art is sickkkk",
+    "Time to make some tezos, baby",
+    "*Bip Bop* your art is ready!",
+    "You're gonna be famous because of this one",
+    "Wow, so many emotions on this piece",
+    "CONTEMPLATED!",
+    "I LOVED IT!!",
+    "I know i'm just a robot, but i can understand the levels of emotion you put on this one",
+    "Sell this one for 100tz yeahhh",
+    "I'm in love with your art skills"];
   var randNamez = namez[Math.floor(Math.random() * namez.length)];
 
   link.download = randNamez + ".png";
