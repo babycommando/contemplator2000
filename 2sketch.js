@@ -81,20 +81,23 @@ function setup() {
 
 
 //final text
-  msg = createP('<b> *bip bop* real time rendering baby, now just save the image manually, or click this button:</b>');
+  msg = createP('<b> *bip bop* real time rendering baby, now just save the image manually</b>');
   msg.position(20, 1710);
 
+
+  msg = createP('If using on mobile, you may want to click this button but the canvas will be blank after that, so <b>check if its good first</b>');
+  msg.position(20, 1790);
   //lame download button for loosers
   button = createButton('Download ::)');
-  button.position(20, 1770);
+  button.position(20, 1870);
   button.mousePressed(download_image);
 
 //credits - dear hax0r, if you contributed paste your alias here
   msg = createP('By @BabyCommando_ with love <3');
-  msg.position(20, 1910);
+  msg.position(20, 1930);
 
   msg = createP('Please help me get jiu jitsu classes for my grandmother -> donate to tz1KseWbS7f7YQhGsGP8QmXDJyzrKV71xxyj (I accept arts :] )');
-  msg.position(20, 1930);
+  msg.position(20, 1950);
 
 //just a dot to make the page longer -
 //or maybe a future easter egg hehe
