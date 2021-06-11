@@ -9,6 +9,7 @@ let input6;
 let input7;
 let typeTexts;
 let aliendatacenter;
+let button;
 // let qr;
 
 // load images
@@ -32,6 +33,8 @@ function setup() {
   input = createFileInput(handleFile);
   input.position(20, 1075);
   let c = createCanvas(1300, 800);
+  c.id('mycanvas');
+
 
 //input Artowk Name
   msg = createP('Insert <b>Artwork Name</b> (to break line press enter key)');
@@ -78,8 +81,13 @@ function setup() {
 
 
 //final text
-  msg = createP('<b> *bip bop* real time rendering baby, now just save the image</b>');
+  msg = createP('<b> *bip bop* real time rendering baby, now just save the image manually, or click this button:</b>');
   msg.position(20, 1710);
+
+  //lame download button for loosers
+  button = createButton('Download ::)');
+  button.position(20, 1770);
+  button.mousePressed(download_image);
 
 //credits - dear hax0r, if you contributed paste your alias here
   msg = createP('By @BabyCommando_ with love <3');
@@ -162,4 +170,14 @@ function handleFile(file) {
   }
 
 
+
+}
+
+function download_image(){
+  var canvas = document.getElementById("mycanvas");
+  image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+  var link = document.createElement('a');
+  link.download = "my-image.png";
+  link.href = image;
+  link.click();
 }
