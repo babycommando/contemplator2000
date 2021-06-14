@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  cursor: url('/img/ice.cur'), default;
+  cursor: url('img/ice.cur'), default;
 }
 canvas {
   display: block;
@@ -81,7 +81,7 @@ li {
 }
 
 .gridbutton {
-	cursor: url('/img/finger.cur'), default;
+	cursor: url('img/finger.cur'), default;
   background-color: white;
   border-color: rgb(204, 204, 204);
   border-width: 2px;
@@ -106,7 +106,7 @@ li {
 .buttons {
     margin: 10%;
     text-align: center;
-	cursor: url('/img/finger.cur'), default;
+	cursor: url('img/finger.cur'), default;
 }
 
 .btn-hover {
@@ -126,7 +126,7 @@ li {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-	cursor: url('/img/finger.cur'), default;
+	cursor: url('img/finger.cur'), default;
 }
 
 .btn-hover:hover {
@@ -135,13 +135,13 @@ li {
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-	cursor: url('/img/finger.cur'), default;
+	cursor: url('img/finger.cur'), default;
 
 }
 
 .btn-hover:focus {
     outline: none;
-	cursor: url('/img/finger.cur'), default;
+	cursor: url('img/finger.cur'), default;
 
 }
 
