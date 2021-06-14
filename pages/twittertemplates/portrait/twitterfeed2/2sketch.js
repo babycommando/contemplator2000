@@ -27,7 +27,7 @@ function preload()
 function setup() {
 
 //input upload file box =============================
-  msg = createP('Upload a <b>squared</b> preview of your artwork </br>that is at least <b>800x800px</b>');
+  msg = createP('Upload a <b>portrait</b> preview of your artwork </br>that is at 4:5 aspect ratio');
   msg.position(20, 1000);
 
   input = createFileInput(handleFile);
